@@ -79,6 +79,9 @@ activate the environment with:
 conda env create --name ecole_env -f ECOLE_environment.yml
 conda activate ecole_env
 ```
+The new `ECOLE_environment.yml` lists only the packages actually
+required for ECOLE, preventing solver conflicts seen with the older
+Anaconda-based specification.
 
 
 ## Instructions Manual for ECOLE
