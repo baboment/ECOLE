@@ -1,1 +1,9 @@
-python ./scripts/ECOLE_call.py --model ecole-ft-somatic --input ./processed_samples --output ./ecole_calls_output --cnv merged --batch_size 16 --normalize ecole_stats.txt --gpu 0
+#!/usr/bin/env bash
+python3 ./scripts/ECOLE_call.py \
+  --model ecole-ft-somatic \
+  --input ./processed_samples \
+  --output ./ecole_calls_output \
+  --cnv merged \
+  --batch_size 16 \
+  --normalize ecole_stats.txt \
+  --gpu 0

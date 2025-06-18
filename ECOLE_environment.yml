@@ -63,9 +63,9 @@ dependencies:
   - conda-verify=3.4.2=py_1
   - contextlib2=0.6.0.post1=py_0
   - cryptography=2.9.2=py38h1ba5d50_0
-  - cudatoolkit=10.1.243=h6bb024c_0
-  - cudnn=7.6.5=cuda10.1_0
-  - cupti=10.1.168=0
+  - cudatoolkit=12.4
+  - cudnn=8.9
+  - cupti=12.4
   - curl=7.71.1=hbc83047_1
   - cycler=0.10.0=py38_0
   - cython=0.29.21=py38he6710b0_0
@@ -267,13 +267,14 @@ dependencies:
   - pysocks=1.7.1=py38_0
   - pytables=3.6.1=py38h9fd0a39_0
   - pytest=5.4.3=py38_0
-  - python=3.8.3=hcff3b4d_2
+  - python=3.10
   - python-dateutil=2.8.1=py_0
   - python-jsonrpc-server=0.3.4=py_1
   - python-language-server=0.34.1=py38_0
   - python-libarchive-c=2.9=py_0
-  - python_abi=3.8=1_cp38
-  - pytorch=1.7.0=py3.8_cuda10.1.243_cudnn7.6.3_0
+  - python_abi=3.10=1_cp310
+  - pytorch=2.2.*=py3.10_cuda12.4*
+  - pytorch-cuda=12.4
   - pytz=2020.1=py_0
   - pywavelets=1.1.1=py38h7b6447c_0
   - pyxdg=0.26=py_0
@@ -342,9 +343,9 @@ dependencies:
   - tk=8.6.10=hbc83047_0
   - toml=0.10.1=py_0
   - toolz=0.10.0=py_0
-  - torchaudio=0.7.0=py38
-  - torchtext=0.8.0=py38
-  - torchvision=0.8.1=py38_cu101
+  - torchaudio=2.2.*
+  - torchtext=0.17.*
+  - torchvision=0.17.*
   - tornado=6.0.4=py38h7b6447c_1
   - tqdm=4.47.0=py_0
   - traitlets=4.3.3=py38_0
