@@ -67,6 +67,22 @@ Note that the provided environment yml file is for Linux systems. For MacOS user
 
 - ECOLE provides GPU support optionally. See [GPU Support](#gpu-support) section.
 
+### GPU Support
+
+The provided conda environment now targets systems equipped with
+NVIDIA H100 GPUs running CUDA 12.4.  The updated environment installs
+PyTorch 2.2 built for compute capability ``sm90`` via the
+``pytorch-cuda`` package.  Ensure your driver supports CUDA 12.4 and
+activate the environment with:
+
+```bash
+conda env create --name ecole_env -f ECOLE_environment.yml
+conda activate ecole_env
+```
+The new `ECOLE_environment.yml` lists only the packages actually
+required for ECOLE, preventing solver conflicts seen with the older
+Anaconda-based specification.
+
 
 ## Instructions Manual for ECOLE
 Important notice: Please call the ECOLE_call.py script from the scripts directory.
